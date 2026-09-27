@@ -1,0 +1,13 @@
+name = "jargon-buster"
+main = "src/worker.js"
+compatibility_date = "2024-09-23"
+
+# Serve the static frontend from ./public. The Worker (src/worker.js)
+# handles /api/jargon itself and delegates everything else to this
+# asset binding, so a single Worker covers both the site and the API.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[observability]
+enabled = true

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Jargon Buster — Corporate speak, decoded before lunch</title>
+<meta name="description" content="Paste no meetings. Just tap once and get a corporate buzzword phrase translated into blunt, plain English. A satirical utility for anyone drowning in synergy." />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://jargon-buster.suvadipchakraborty.workers.dev/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Jargon Buster — Corporate speak, decoded before lunch" />
+<meta property="og:description" content="Tap once. Get a real corporate buzzword phrase, translated into blunt plain English. No logins, no bloat, no synergy." />
+<meta property="og:url" content="https://jargon-buster.suvadipchakraborty.workers.dev/" />
+<meta property="og:site_name" content="Jargon Buster" />
+<meta property="og:image" content="https://jargon-buster.suvadipchakraborty.workers.dev/assets/og-image.png" />
+<meta property="og:image:secure_url" content="https://jargon-buster.suvadipchakraborty.workers.dev/assets/og-image.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Jargon Buster — a corporate satire utility, stamped TRANSLATED" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Jargon Buster — Corporate speak, decoded before lunch" />
+<meta name="twitter:description" content="Tap once. Get a real corporate buzzword phrase, translated into blunt plain English." />
+<meta name="twitter:image" content="https://jargon-buster.suvadipchakraborty.workers.dev/assets/og-image.png" />
+
+<!-- PWA -->
+<meta name="theme-color" content="#1d3557" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Jargon Buster" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<div class="sheet">
+
+  <!-- Perforation edge -->
+  <div class="perf" aria-hidden="true"></div>
+
+  <header class="letterhead">
+    <div class="letterhead__row">
+      <div class="letterhead__mark">JB</div>
+      <div class="letterhead__text">
+        <h1>Jargon Buster</h1>
+        <p>A corporate satire utility &mdash; filed by Suva</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" id="tab-home" role="tab" aria-selected="true" aria-controls="panel-home">Home</button>
+    <button class="tab" id="tab-about" role="tab" aria-selected="false" aria-controls="panel-about">About</button>
+  </nav>
+
+  <main>
+    <!-- ============================ HOME ============================ -->
+    <section id="panel-home" class="panel" role="tabpanel" aria-labelledby="tab-home">
+
+      <p class="kicker">One tap. Zero synergy tolerated.</p>
+
+      <div class="memo" id="memo">
+
+        <div class="memo__idle" id="memoIdle">
+          <p class="memo__idle-text">No memo pending. Requisition one below.</p>
+        </div>
+
+        <div class="memo__loading" id="memoLoading" hidden>
+          <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="memo__loading-text" id="loadingText">Circling back to stakeholders&hellip;</p>
+        </div>
+
+        <div class="memo__result" id="memoResult" hidden>
+          <div class="memo__stampzone">
+            <span class="stamp" id="stampMark">TRANSLATED</span>
+          </div>
+
+          <p class="field-label">The jargon on file</p>
+          <p class="jargon-text" id="jargonText">&mdash;</p>
+
+          <div class="meaning">
+            <p class="field-label field-label--dark">What it actually means</p>
+            <p class="meaning-text" id="meaningText">&mdash;</p>
+          </div>
+
+          <div class="actions">
+            <button class="iconbtn" id="shareBtn" type="button" aria-label="Share this translation">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 .05 3.24L8.9 10.6a3 3 0 1 0 0 2.8l6.15 3.36A3 3 0 1 0 16 15a3 3 0 0 0 .07.66L9.9 12.3a3 3 0 0 0 0-1.6l6.16-3.36c.55.42 1.23.66 1.94.66Z" fill="currentColor"/></svg>
+              <span>Share</span>
+            </button>
+            <button class="iconbtn" id="saveBtn" type="button" aria-label="Save to Q3 Strategy Deck">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v16.2a.8.8 0 0 1-1.24.67L12 17.1l-5.76 3.77A.8.8 0 0 1 5 20.2V4a1 1 0 0 1 1-1Z" fill="currentColor"/></svg>
+              <span id="saveBtnLabel">Save to Q3</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="cta" id="generateBtn" type="button">
+        <span>Synergize Paradigm</span>
+      </button>
+      <p class="cta-hint">Generates one (1) real corporate phrase, translated on the spot.</p>
+
+      <section class="deck" id="deckSection" hidden>
+        <button class="deck__toggle" id="deckToggle" aria-expanded="false" aria-controls="deckList">
+          <span>&#9656;</span>
+          <span id="deckToggleLabel">Q3 Strategy Deck (0)</span>
+        </button>
+        <div class="deck__list" id="deckList" hidden></div>
+      </section>
+
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section id="panel-about" class="panel" role="tabpanel" aria-labelledby="tab-about" hidden>
+      <div class="memo memo--static">
+        <p class="field-label">Case file</p>
+        <h2 class="about-title">Why this exists</h2>
+        <p class="about-text">
+          Somewhere between the standup and the steering committee, English quietly left the building.
+          Nobody actually decided to <em>leverage synergies</em> or <em>circle back offline</em> &mdash;
+          it just accretes, meeting by meeting, until a simple sentence needs a glossary.
+        </p>
+        <p class="about-text">
+          Jargon Buster pulls a real, machine-generated corporate phrase from the wild, runs it through
+          a small in-house translation engine, and hands you back what a person would actually say.
+          No AI theatre, no seven-step framework &mdash; just the blunt version.
+        </p>
+        <p class="about-text">
+          Use it before a townhall to brace yourself. Use it after one, to feel something.
+        </p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <p class="field-label">Filed under</p>
+        <ul class="about-list">
+          <li>No logins. No accounts. No onboarding flow for a translator.</li>
+          <li>Nothing you generate leaves your device except when you choose to share it.</li>
+          <li>Runs entirely on a Cloudflare Worker &mdash; fast wherever you open it.</li>
+        </ul>
+
+        <div class="divider" aria-hidden="true"></div>
+        <p class="about-text about-text--muted">
+          Part of <strong>The Shelf</strong> &mdash; small, single-purpose apps built by Suva.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Built by Suva</span>
+    <a class="footer__feedback" id="feedbackLink" href="#" aria-label="Send feedback by email">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1.4 2 6.1 5.2a.8.8 0 0 0 1 0L18.6 6H5.4ZM5 8.3V18h14V8.3l-5.8 4.9a2.4 2.4 0 0 1-3 0L5 8.3Z" fill="currentColor"/></svg>
+      Feedback
+    </a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="/js/dictionary.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
